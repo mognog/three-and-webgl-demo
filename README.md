@@ -11,6 +11,8 @@ This project is an educational tool that allows users to draw digits on a canvas
 - **Neural Network Visualization** with particle animations
 - **Responsive Design** for various screen sizes
 
+> **Note:** This is a demonstration/simulation that uses a simplified model to visualize neural network concepts. It does not use a fully trained TensorFlow.js model for inference. The predictions are simulated for educational purposes.
+
 ## Features
 
 - ✅ **Interactive Drawing Canvas**: Draw digits (0-9) using mouse or touch input
@@ -34,6 +36,8 @@ This project is an educational tool that allows users to draw digits on a canvas
 3. The network processes the input and generates predictions
 4. The 3D visualization shows the data flowing through the network
 5. The UI displays the prediction results with probability bars
+
+> **Important:** The neural network in this demo uses a simplified simulation model rather than a fully trained TensorFlow.js model. The predictions are approximated for demonstration purposes.
 
 ## Project Structure
 

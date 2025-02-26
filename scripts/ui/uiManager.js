@@ -1,6 +1,35 @@
 export class UIManager {
   constructor(outputContainer) {
     this.outputContainer = outputContainer;
+    
+    // Add a demo mode indicator to the page
+    this.addDemoModeIndicator();
+  }
+  
+  addDemoModeIndicator() {
+    const demoIndicator = document.createElement('div');
+    demoIndicator.className = 'demo-mode-indicator';
+    demoIndicator.innerHTML = '🧪 Demo Mode: Using simulated neural network';
+    document.body.appendChild(demoIndicator);
+    
+    // Add the necessary CSS
+    const style = document.createElement('style');
+    style.textContent = `
+      .demo-mode-indicator {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(255, 193, 7, 0.9);
+        color: #333;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+    `;
+    document.head.appendChild(style);
   }
   
   showLoading() {

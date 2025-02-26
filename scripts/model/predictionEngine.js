@@ -113,4 +113,7 @@ export function generateActivations(input, predictions, architecture) {
   activations.push(predictions);
 
   return activations;
-} 
+}
+
+// Make functions available globally to avoid circular dependencies
+window.predictionEngine = { predictDigit, generateActivations }; 
