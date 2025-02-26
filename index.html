@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Network Visualizer</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+        "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.158.0/examples/jsm/controls/OrbitControls.js"
+      }
+    }
+  </script>
+  <script type="module" src="scripts/main.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+</head>
+<body>
+  <header>
+    <h1>Neural Network Visualizer</h1>
+    <p>An interactive demonstration of neural network inference</p>
+  </header>
+  
+  <main>
+    <section class="visualization-section">
+      <div id="network-container"></div>
+    </section>
+    
+    <section class="interaction-section">
+      <div class="panel">
+        <h2>Input</h2>
+        <p>Draw a digit (0-9) in the canvas below:</p>
+        <div id="input-container"></div>
+      </div>
+      
+      <div class="panel">
+        <h2>Output</h2>
+        <div id="output-container">
+          <p>Draw a digit and click "Analyze" to see the network in action.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Neural Network Visualizer - A demonstration of WebGL, Three.js, Canvas, and ML integration</p>
+  </footer>
+</body>
+</html> 

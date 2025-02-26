@@ -1,0 +1,5 @@
+   {
+     "inputDimension": 784,
+     "outputDimension": 10,
+     "layers": [784, 128, 64, 10]
+   }
